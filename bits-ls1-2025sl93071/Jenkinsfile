@@ -11,8 +11,10 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'python3 test_calculator.py'  
+                sh '''  
                 python3 - <<EOF
+import sys                                                                    
+sys.path.insert(0, '.') 
 import calculator
 
 assert calculator.add(2,3) == 5
