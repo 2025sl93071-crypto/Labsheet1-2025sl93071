@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh '''
+                sh 'python3 test_calculator.py'  
                 python3 - <<EOF
 import calculator
 
