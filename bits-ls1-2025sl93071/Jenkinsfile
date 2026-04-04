@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/<your-username>/<repo-name>.git'
+                git 'https://github.com/2025sl93071-crypto/Labsheet1-2025sl93071.git'
             }
         }
 
